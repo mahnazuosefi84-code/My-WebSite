@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3a1112">
+  <title>ÉLORA | More than a fragrance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="announcement" data-fa="✦ ارسال رایگان برای سفارش‌های بالای ۲ میلیون تومان ✦"
+    data-en="✦ Complimentary shipping on orders over $150 ✦">✦ ارسال رایگان برای سفارش‌های بالای ۲ میلیون تومان ✦</div>
+
+  <div class="utility">
+    <div class="utility-actions">
+
+      <!-- حساب کاربری -->
+      <button class="text-action" id="accountBtn">
+        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21a8 8 0 0 1 16 0" />
+        </svg>
+        <span data-fa="ورود / ثبت‌نام" data-en="Sign in / Register">ورود / ثبت‌ نام</span>
+      </button>
+
+      <!-- علاقه‌مندی‌ها -->
+      <button class="text-action" id="wishBtn">
+        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z" />
+        </svg>
+        <span data-fa="علاقه‌مندی‌ها" data-en="Wishlist">علاقه‌مندی‌ها</span>
+        <b class="count" id="wishCount">0</b>
+      </button>
+
+      <!-- دکمه سبد خرید -->
+      <button class="text-action" id="cartBtn">
+        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3h2l2.4 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 7H6" />
+          <circle cx="10" cy="21" r="1" />
+          <circle cx="18" cy="21" r="1" />
+        </svg>
+
+        <span data-fa="سبد خرید" data-en="Cart">سبد خرید</span>
+
+        <b class="count" id="cartCount">0</b>
+      </button>
+
+    </div>
+    <div class="language"><button data-lang="en">EN</button><button class="active" data-lang="fa">فا</button></div>
+  </div>
+  <header class="header">
+    <button class="mobile-menu" id="mobileMenu" aria-label="menu">☰</button>
+    <nav class="nav nav-right"><a href="#home" data-fa="صفحه اصلی" data-en="Home">صفحه اصلی</a><a href="products.html"
+        data-fa="عطرها" data-en="Fragrances">عطرها</a><a href="products.html?category=all" data-fa="پرفروش‌ها"
+        data-en="Best sellers">پرفروش‌ها</a></nav>
+    <a class="brand" href="#home"><strong>ÉLORA</strong>
+      <nav class="nav nav-left"><a href="#mood" data-fa="رایحه‌ی تو" data-en="Your mood">رایحه‌ی تو</a><a
+          href="#journal" data-fa="مجله" data-en="Journal">مجله</a><a href="#contact" data-fa="تماس با ما"
+          data-en="Contact">تماس با
+          ما</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy reveal"><span class="eyebrow">ÉLORA — THE ART OF SCENT</span>
+        <div class="gold-rule"></div>
+        <h1 data-fa="عطری فراتر از زمان" data-en="A fragrance beyond time">عطری فراتر از زمان</h1>
+        <p data-fa="کشف مجموعه‌ای منتخب از عطرهای ماندگار جهان؛ برای لحظه‌هایی که قرار است به یاد بمانند."
+          data-en="Discover a curated collection of the world's most iconic fragrances, made for moments worth remembering.">
+          کشف مجموعه‌ای منتخب از عطرهای ماندگار جهان؛ برای لحظه‌هایی که قرار است به یاد بمانند.</p>
+        <a class="button button-light" href="#products"><span data-fa="کشف مجموعه" data-en="Explore collection">کشف
+            مجموعه</span> ↗</a>
+      </div>
+      <div class="hero-stamp">EAU<br>DE<br>ÉLORA</div>
+      <div class="hero-dots"><i class="selected"></i><i></i><i></i></div>
+    </section>
+
+    <!-- مزایای فروشگاه -->
+    <section class="benefits">
+
+      <!-- ارسال سریع -->
+      <div class="benefit">
+        <span class="benefit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M3 7h11v11H3z" />
+            <path d="M14 11h4l3 3v4h-7z" />
+            <circle cx="7.5" cy="18" r="2" />
+            <circle cx="18" cy="18" r="2" />
+            <path d="M5 10h5M5 13h3" />
+          </svg>
+        </span>
+        <div>
+          <b data-fa="ارسال سریع" data-en="Fast delivery">ارسال سریع</b>
+          <small data-fa="در سراسر کشور" data-en="Across the country">در سراسر کشور</small>
+        </div>
+      </div>
+
+      <!-- پرداخت امن -->
+      <div class="benefit">
+        <span class="benefit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </span>
+        <div>
+          <b data-fa="پرداخت امن" data-en="Secure payment">پرداخت امن</b>
+          <small data-fa="با خیال راحت خرید کنید" data-en="Shop with confidence">با خیال راحت خرید کنید</small>
+        </div>
+      </div>
+
+      <!-- کیفیت تضمینی -->
+      <div class="benefit">
+        <span class="benefit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6" />
+            <path d="m8.5 13-1.5 9 5-3 5 3-1.5-9" />
+            <path d="m9.5 8 1.7 1.7L14.5 6" />
+          </svg>
+        </span>
+        <div>
+          <b data-fa="کیفیت تضمینی" data-en="Premium quality">کیفیت تضمینی</b>
+          <small data-fa="تضمین اصالت کالا" data-en="Authenticity guaranteed">تضمین اصالت کالا</small>
+        </div>
+      </div>
+
+      <!-- بازگشت آسان -->
+      <div class="benefit">
+        <span class="benefit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M3 10h11a7 7 0 1 1-6.5 9.5" />
+            <path d="M3 4v6h6" />
+            <path d="m10 14 2 2 4-4" />
+          </svg>
+        </span>
+        <div>
+          <b data-fa="بازگشت آسان" data-en="Easy returns">بازگشت آسان</b>
+          <small data-fa="تا ۱۴ روز" data-en="Within 14 days">تا ۱۴ روز</small>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="catalog catalog-alt section-wrap" id="products">
+      <div class="section-heading"><span></span>
+        <div>
+          <p class="eyebrow" data-fa="جهان بی‌پایان رایحه‌ها" data-en="A WORLD OF SCENTS">جهان بی‌پایان رایحه‌ها</p>
+          <h2 data-fa="عطرها" data-en="The fragrances">عطرها</h2>
+        </div><span></span>
+      </div>
+      <div class="filter-row"><button class="filter active" data-filter="all" data-fa="همه عطرها"
+          data-en="All fragrances">همه عطرها</button><button class="filter" data-filter="women" data-fa="زنانه · ۲۵"
+          data-en="For her · 25">زنانه · ۲۵</button><button class="filter" data-filter="men" data-fa="مردانه · ۲۵"
+          data-en="For him · 25">مردانه · ۲۵</button><button class="filter" data-filter="unisex" data-fa="یونیسکس · ۲۵"
+          data-en="Unisex · 25">یونیسکس · ۲۵</button></div>
+      <div class="product-grid" id="allGrid"></div>
+      <div class="catalog-more"><a class="button button-dark" href="products.html"><span data-fa="مشاهده همه محصولات"
+            data-en="View all products">مشاهده همه محصولات</span> ↗</a></div>
+    </section>
+    <section class="mood-section" id="mood">
+      <div class="mood-bg"></div>
+      <div class="mood-content reveal"><span class="eyebrow">SCENT & SENSIBILITY</span>
+        <h2 data-fa="رایحه‌ای برای حال‌وهوای تو" data-en="A scent for every side of you">رایحه‌ای برای حال‌وهوای تو</h2>
+        <p data-fa="هر حال‌وهوا، امضای خودش را دارد. حال امروزت را انتخاب کن تا رایحه‌ای هماهنگ با دنیای درونت پیدا کنیم."
+          data-en="Every mood has its own signature. Choose how you feel today and find a fragrance that speaks your language.">
+          هر حال‌وهوا، امضای خودش را دارد. حال امروزت را انتخاب کن تا رایحه‌ای هماهنگ با دنیای درونت پیدا کنیم.</p>
+        <div class="mood-options">
+          <button class="mood-chip" data-mood="calm"><span>☾</span><b data-fa="آرام و لطیف" data-en="Calm & soft">آرام و
+              لطیف</b><small data-fa="مشک، پودر، گل سفید" data-en="Musk, powder, white florals">مشک، پودر، گل
+              سفید</small></button>
+          <button class="mood-chip" data-mood="bold"><span>✦</span><b data-fa="جسور و قدرتمند"
+              data-en="Bold & confident">جسور و قدرتمند</b><small data-fa="عود، چرم، ادویه"
+              data-en="Oud, leather, spice">عود، چرم، ادویه</small></button>
+          <button class="mood-chip" data-mood="romantic"><span>♡</span><b data-fa="رمانتیک و گرم"
+              data-en="Romantic & warm">رمانتیک و گرم</b><small data-fa="رز، وانیل، کهربا"
+              data-en="Rose, vanilla, amber">رز، وانیل، کهربا</small></button>
+          <button class="mood-chip" data-mood="fresh"><span>❋</span><b data-fa="شاداب و پرانرژی"
+              data-en="Fresh & lively">شاداب و پرانرژی</b><small data-fa="مرکبات، نت‌های سبز"
+              data-en="Citrus, green notes">مرکبات، نت‌های سبز</small></button>
+        </div>
+        <p class="mood-result" id="moodResult"></p>
+      </div>
+    </section>
+    <section class="journal-section section-wrap" id="journal">
+      <div class="journal-image"></div>
+      <div class="journal-copy reveal"><span class="eyebrow" data-fa="مجله ÉLORA" data-en="THE ÉLORA JOURNAL">مجله
+          ÉLORA</span>
+        <h2 data-fa="یادداشت‌هایی از دنیای رایحه" data-en="Notes from the world of scent">یادداشت‌هایی از دنیای رایحه
+        </h2>
+        <p data-fa="از شناخت نت‌های عطر تا هنر انتخاب رایحه‌ی امضا؛ اینجا درباره‌ی جزئیاتی می‌خوانیم که یک عطر را به بخشی از خاطره تبدیل می‌کنند."
+          data-en="From understanding fragrance notes to finding your signature scent, explore the details that turn perfume into a lasting memory.">
+          از شناخت نت‌های عطر تا هنر انتخاب رایحه‌ی امضا؛ اینجا درباره‌ی جزئیاتی می‌خوانیم که یک عطر را به بخشی از خاطره
+          تبدیل می‌کنند.</p>
+        <div class="journal-links">
+          <article class="journal-entry"><button class="journal-toggle" aria-expanded="false"
+              aria-controls="journal-notes"><b data-fa="راهنمای نت‌های عطر" data-en="A guide to fragrance notes">راهنمای
+                نت‌های عطر</b><span class="journal-chevron">+</span></button>
+            <div class="journal-answer" id="journal-notes" hidden>
+              <p data-fa="ساختار بسیاری از عطرها را می‌توان با سه گروه نت شناخت: نت آغازین، نت میانی و نت پایه. نت‌های آغازین نخستین برداشت را می‌سازند و معمولاً سبک‌ترند؛ نت‌های میانی شخصیت اصلی رایحه را شکل می‌دهند؛ و نت‌های پایه عمق و رد ماندگارتر عطر را ایجاد می‌کنند. این لایه‌ها به‌تدریج در هم ترکیب می‌شوند و مرز زمانی کاملاً ثابتی ندارند."
+                data-en="Many fragrances are described through three note groups: top, heart and base. Top notes create the first impression and are often lighter; heart notes shape the fragrance’s main character; and base notes add depth and a lingering trail. These layers blend gradually rather than changing at one exact moment.">
+                ساختار بسیاری از عطرها را می‌توان با سه گروه نت شناخت: نت آغازین، نت میانی و نت پایه. نت‌های آغازین
+                نخستین برداشت را می‌سازند و معمولاً سبک‌ترند؛ نت‌های میانی شخصیت اصلی رایحه را شکل می‌دهند؛ و نت‌های
+                پایه عمق و رد ماندگارتر عطر را ایجاد می‌کنند. این لایه‌ها به‌تدریج در هم ترکیب می‌شوند و مرز زمانی
+                کاملاً ثابتی ندارند.</p>
+            </div>
+          </article>
+          <article class="journal-entry"><button class="journal-toggle" aria-expanded="false"
+              aria-controls="journal-signature"><b data-fa="چطور عطر امضای خود را پیدا کنیم؟"
+                data-en="How to find your signature scent">چطور عطر امضای خود را پیدا کنیم؟</b><span
+                class="journal-chevron">+</span></button>
+            <div class="journal-answer" id="journal-signature" hidden>
+              <p data-fa="از رایحه‌هایی شروع کن که در زندگی روزمره دوست داری؛ مثلاً مرکباتی و خنک، گلی و لطیف، چوبی و گرم یا شیرین و وانیلی. هنگام تست، عطر را روی پوست امتحان کن و برای شناخت تغییراتش کمی زمان بده. بهتر است چند عطر را هم‌زمان تست نکنی؛ چون حس بویایی ممکن است خسته شود. در نهایت عطری را انتخاب کن که با سلیقه و موقعیت‌های مورد استفاده‌ات هماهنگ باشد، نه صرفاً عطری که ترند شده است."
+                data-en="Start with scent families you naturally enjoy: fresh citrus, soft florals, warm woods or sweet vanilla. Test a fragrance on your skin and give it time to develop. Avoid testing too many scents at once, as your sense of smell can become fatigued. Choose a perfume that suits your taste and the occasions you have in mind, rather than choosing only because it is trending.">
+                از رایحه‌هایی شروع کن که در زندگی روزمره دوست داری؛ مثلاً مرکباتی و خنک، گلی و لطیف، چوبی و گرم یا شیرین
+                و وانیلی. هنگام تست، عطر را روی پوست امتحان کن و برای شناخت تغییراتش کمی زمان بده. بهتر است چند عطر را
+                هم‌زمان تست نکنی؛ چون حس بویایی ممکن است خسته شود. در نهایت عطری را انتخاب کن که با سلیقه و موقعیت‌های
+                مورد استفاده‌ات هماهنگ باشد، نه صرفاً عطری که ترند شده است.</p>
+            </div>
+          </article>
+          <article class="journal-entry"><button class="journal-toggle" aria-expanded="false"
+              aria-controls="journal-lasting"><b data-fa="ماندگاری عطر به چه عواملی بستگی دارد؟"
+                data-en="What makes a fragrance last?">ماندگاری عطر به چه عواملی بستگی دارد؟</b><span
+                class="journal-chevron">+</span></button>
+            <div class="journal-answer" id="journal-lasting" hidden>
+              <p data-fa="ماندگاری به فرمول عطر، غلظت آن، نوع مواد معطر، پوست، آب‌وهوا و محل استفاده بستگی دارد. رایحه‌های چوبی، کهربایی و مُشکی اغلب حس پایه عمیق‌تری دارند، اما هیچ قانون یکسانی برای همه عطرها وجود ندارد. پوست تمیز و مرطوب می‌تواند به پخش یکنواخت‌تر رایحه کمک کند. عطر را دور از نور مستقیم و گرمای زیاد نگهداری کن تا کیفیت آن بهتر حفظ شود."
+                data-en="Longevity depends on the formula, concentration, aromatic materials, your skin, the weather and where you apply it. Woody, ambery and musky accords often create a deeper base, but there is no universal rule for every perfume. Applying fragrance to clean, moisturized skin may help it wear more evenly. Store the bottle away from direct sunlight and excessive heat to help preserve its quality.">
+                ماندگاری به فرمول عطر، غلظت آن، نوع مواد معطر، پوست، آب‌وهوا و محل استفاده بستگی دارد. رایحه‌های چوبی،
+                کهربایی و مُشکی اغلب حس پایه عمیق‌تری دارند، اما هیچ قانون یکسانی برای همه عطرها وجود ندارد. پوست تمیز و
+                مرطوب می‌تواند به پخش یکنواخت‌تر رایحه کمک کند. عطر را دور از نور مستقیم و گرمای زیاد نگهداری کن تا
+                کیفیت آن بهتر حفظ شود.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="howto section-wrap" id="guide">
+      <div class="section-heading"><span></span>
+        <div>
+          <p class="eyebrow" data-fa="هنر استفاده از عطر" data-en="THE ART OF APPLICATION">هنر استفاده از عطر</p>
+          <h2 data-fa="چطور عطر بزنیم؟" data-en="How to wear perfume">چطور عطر بزنیم؟</h2>
+          <p class="section-sub" data-fa="سه روش برای پخش رایحه؛ متناسب با فضا و موقعیتی که در آن هستی."
+            data-en="Three ways to wear fragrance, depending on your setting and occasion.">سه روش برای پخش رایحه؛
+            متناسب با فضا و موقعیتی که در آن هستی.</p>
+        </div><span></span>
+      </div>
+      <div class="method-grid">
+        <article class="method-card">
+          <div class="method-photo halo"></div>
+          <div class="method-body"><span class="method-number">01</span>
+            <h3 data-fa="مدل هاله‌ای" data-en="The halo method">مدل هاله‌ای</h3>
+            <p data-fa="پشت گوش، قفسه سینه و داخل آرنج‌ها؛ رایحه‌ای نرم و نزدیک به پوست ایجاد می‌کند. مناسب موقعیت‌هایی که پشت میز نشسته‌ای و به عطری دلنشین و متعادل نیاز داری."
+              data-en="Behind the ears, chest and inner elbows create a soft, close-to-skin scent. Ideal for desk settings and intimate spaces.">
+              پشت گوش، قفسه سینه و داخل آرنج‌ها؛ رایحه‌ای نرم و نزدیک به پوست ایجاد می‌کند. مناسب موقعیت‌هایی که پشت میز
+              نشسته‌ای و به عطری دلنشین و متعادل نیاز داری.</p>
+          </div>
+        </article>
+        <article class="method-card">
+          <div class="method-photo column"></div>
+          <div class="method-body"><span class="method-number">02</span>
+            <h3 data-fa="مدل ستونی" data-en="The column method">مدل ستونی</h3>
+            <p data-fa="شانه‌ها، قفسه سینه، پشت زانو و مچ یا ساق پا؛ خط بویی عمودی و گسترده‌تر می‌سازد. انتخابی مناسب مهمانی‌های بزرگ و فضاهای باز."
+              data-en="Shoulders, chest, behind the knees and wrists or lower legs create a more expansive scent trail, suited to large gatherings and open spaces.">
+              شانه‌ها، قفسه سینه، پشت زانو و مچ یا ساق پا؛ خط بویی عمودی و گسترده‌تر می‌سازد. انتخابی مناسب مهمانی‌های
+              بزرگ و فضاهای باز.</p>
+          </div>
+        </article>
+        <article class="method-card">
+          <div class="method-photo bubble"></div>
+          <div class="method-body"><span class="method-number">03</span>
+            <h3 data-fa="مدل حبابی" data-en="The bubble method">مدل حبابی</h3>
+            <p data-fa="پشت گوش، روی شکم، مچ دست و پشت زانو؛ هاله‌ای متعادل پیرامون بدن ایجاد می‌کند تا رایحه در اطراف تو پخش شود."
+              data-en="Behind the ears, abdomen, wrists and behind the knees create a balanced scent bubble around you.">
+              پشت گوش، روی شکم، مچ دست و پشت زانو؛ هاله‌ای متعادل پیرامون بدن ایجاد می‌کند تا رایحه در اطراف تو پخش شود.
+            </p>
+          </div>
+        </article>
+      </div>
+      <p class="tip"><span>✧</span><b data-fa="نکته‌ی ÉLORA:" data-en="ÉLORA tip:">نکته‌ی ÉLORA:</b> <span
+          data-fa="عطر را روی پوست تمیز و مرطوب اسپری کن و پس از استفاده، مچ‌ها را به هم نمال تا ساختار رایحه بهتر حفظ شود."
+          data-en="Apply fragrance to clean, moisturized skin. Avoid rubbing your wrists together so the scent develops as intended.">عطر
+          را روی پوست تمیز و مرطوب اسپری کن و پس از استفاده، مچ‌ها را به هم نمال تا ساختار رایحه بهتر حفظ شود.</span>
+      </p>
+    </section>
+    <section class="newsletter" id="contact">
+      <div><span class="eyebrow" data-fa="در تماس بمانیم" data-en="STAY IN TOUCH">در تماس بمانیم</span>
+        <h2 data-fa="اولین نفر از رایحه‌های تازه باخبر شو" data-en="Be the first to discover new scents">اولین نفر از
+          رایحه‌های تازه باخبر شو</h2>
+      </div>
+      <form id="newsletterForm"><input type="email" required placeholder="ایمیل شما" data-placeholder-fa="ایمیل شما"
+          data-placeholder-en="Your email address"><button class="button button-dark" type="submit" data-fa="عضویت"
+          data-en="Subscribe">عضویت</button></form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand"><span class="monogram">ÉL</span><strong>ÉLORA</strong><small data-fa="بیش از یک رایحه."
+          data-en="More than a fragrance.">بیش از یک رایحه.</small></div>
+      <div class="footer-nav"><a href="products.html" data-fa="عطرها" data-en="Fragrances">عطرها</a><a
+          href="products.html?category=all" data-fa="پرفروش‌ها" data-en="Best sellers">پرفروش‌ها</a><a href="#journal"
+          data-fa="مجله" data-en="Journal">مجله</a><a href="#guide" data-fa="راهنمای عطر"
+          data-en="Perfume guide">راهنمای عطر</a><a href="#contact" data-fa="تماس با ما" data-en="Contact">تماس با
+          ما</a></div>
+      <div class="socials"><a href="#contact">◎</a><a href="#contact">℘</a><a href="#contact">➤</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 ÉLORA. <span data-fa="تمامی حقوق محفوظ است."
+          data-en="All rights reserved.">تمامی حقوق محفوظ است.</span></span><span data-fa="ساخته‌شده برای عاشقان رایحه"
+        data-en="Crafted for fragrance lovers">ساخته‌شده برای عاشقان رایحه</span></div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <h3 id="drawerTitle">سبد خرید</h3><button class="close" id="closeDrawer">×</button>
+    </div>
+    <div id="drawerContent"></div>
+  </aside>
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal"><button class="close modal-close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
